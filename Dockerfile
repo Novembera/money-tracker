@@ -1,7 +1,5 @@
 FROM maven:3.5-jdk-8-alpine
 
-MAINTAINER Dennis Stritzke <dennis@stritzke.me>
-
 ADD . /app
 
 RUN mvn clean package -f /app/pom.xml && \
