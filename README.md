@@ -21,7 +21,7 @@ Visit [http://localhost:8080](http://localhost:8080).
 ## Run in OpenShift
 ```
 oc new-app --template=postgresql-persistent -p=POSTGRESQL_DATABASE=moneytracker
-oc new-app novembera/money-tracker:1.0.2
+oc new-app novembera/money-tracker:latest
 oc patch dc money-tracker -p '{
   "spec": {
     "template": {
